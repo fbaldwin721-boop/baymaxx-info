@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BaymaXX Privacy Policy</title>
+  <meta name="description" content="How BaymaXX collects, stores, uses, shares, retains and deletes data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav>
+    <a href="./">BaymaXX</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective October 13, 2026</p>
+
+  <p>BaymaXX is a private assistant with a single user, its owner. This policy describes exactly what BaymaXX does
+  with that person's data. BaymaXX has no other users, no accounts, no advertising, no analytics and no tracking,
+  and it never sells or rents data.</p>
+
+  <h2>Data BaymaXX uses</h2>
+  <ul>
+    <li><strong>Wearable data</strong>, only for the data types the owner approves on the provider's consent screen:
+      daily sleep, sleep periods, readiness, activity, heart rate, blood-oxygen (SpO2), stress, resilience,
+      cardiovascular measures, VO2 max, workouts, sessions, tags, rest-mode periods and sleep-time recommendations.
+      BaymaXX does not request the email address or the personal-information (age, height, weight, sex) data
+      types.</li>
+    <li><strong>Things the owner tells BaymaXX</strong>, such as habits, goals, symptoms, feedback and how a
+      suggestion worked out.</li>
+    <li><strong>Records BaymaXX derives</strong>: personal baselines, trends, observations, notes of past health
+      conversations, and suggestions it made, with their reasons.</li>
+    <li><strong>Authorization tokens</strong> for the wearable account.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <p>All of the above is stored only on the owner's own Mac, in a private folder outside any code repository.
+  Health values, conversation notes and tokens are encrypted with AES-256-GCM, and the files are readable only by
+  the owner's macOS account. The encryption key is kept on the same Mac. That protects against accidental exposure
+  (copies, backups, logs) but not against malicious software running under the owner's account, so the Mac should
+  have disk encryption (FileVault) turned on.</p>
+  <p>BaymaXX also keeps local diagnostic logs on the same Mac, which can include conversation transcripts and health
+  answers. These logs are readable only by the owner's account. Passwords, tokens, client secrets and keys are
+  removed from them before they are written.</p>
+
+  <h2>How it is used</h2>
+  <p>Only to answer the owner's questions, describe trends compared with the owner's own history, add a short health
+  note to the owner's morning briefing when something meaningful changes, and remember context the owner asked it to
+  remember. Data is not used for advertising, profiling for others or model training by BaymaXX, and it is not used
+  to make decisions about anyone.</p>
+
+  <h2>Services that receive data</h2>
+  <table>
+    <thead><tr><th>Service</th><th>What it receives</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Wearable provider's API</td>
+        <td>Authorization requests and data requests for the owner's own account</td>
+        <td>To read the data the owner authorized</td>
+      </tr>
+      <tr>
+        <td>Google Gemini API, with audio carried over LiveKit Cloud</td>
+        <td>The owner's spoken conversation with BaymaXX, including any health answers spoken during it (summaries
+          and figures, not full data histories)</td>
+        <td>BaymaXX's voice runs on Google's realtime speech model</td>
+      </tr>
+      <tr>
+        <td>U.S. National Library of Medicine (PubMed)</td>
+        <td>General topic keywords only, such as "sleep" or "caffeine". Never the owner's measurements, words or
+          identity.</td>
+        <td>To find published research when the owner asks for evidence</td>
+      </tr>
+      <tr>
+        <td>OpenAI API (optional for health features, off by default)</td>
+        <td>If the owner enables it, a short summary of computed health figures (no raw data, no identity)</td>
+        <td>To phrase an explanation more naturally</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Those services handle data under their own terms and privacy policies. BaymaXX does not share data with anyone
+  else.</p>
+
+  <h2>Retention</h2>
+  <ul>
+    <li>Wearable data, derived records and notes are kept on the Mac until the owner deletes them.</li>
+    <li>Reported symptoms are treated as expired after 30 days and general feedback after a year. Expired notes are
+      no longer used but stay in local storage until deleted.</li>
+    <li>Cached research results contain only public article details and are refreshed after 30 days.</li>
+    <li>Diagnostic logs are kept until the owner deletes them. They are not rotated automatically.</li>
+  </ul>
+
+  <h2>Revoking consent and deleting data</h2>
+  <ul>
+    <li><strong>Disconnect:</strong> BaymaXX revokes its access token with the wearable provider and deletes the
+      stored tokens. The owner can also remove the application from the provider's developer portal at any time.</li>
+    <li><strong>Delete wearable data:</strong> removes all imported wearable data, baselines and observations,
+      keeping the owner's notes and conversation history.</li>
+    <li><strong>Delete everything:</strong> removes all health data, notes, tokens and the encryption key from the
+      Mac.</li>
+    <li>Deleting local logs removes any transcripts in them.</li>
+  </ul>
+
+  <h2>Contact preferences</h2>
+  <p>BaymaXX never sends marketing or unsolicited messages. Health notes appear only inside the owner's own
+  BaymaXX conversations and briefings, and the owner can mute any measurement or turn the health features off.</p>
+
+  <h2>Children</h2>
+  <p>BaymaXX is not intended for or used by children.</p>
+
+  <h2>Changes</h2>
+  <p>If BaymaXX's data handling changes, this page will be updated and its effective date changed.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/fbaldwin721-boop">GitHub: fbaldwin721-boop</a>.</p>
+
+  <footer>BaymaXX is an independent personal project and is not affiliated with, sponsored by or endorsed by any
+  wearable manufacturer.</footer>
+</main>
+</body>
+</html>
